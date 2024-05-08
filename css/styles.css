@@ -80,6 +80,7 @@ img {
 }
 .menu {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 .top-contact-menu {
@@ -102,7 +103,10 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding-top: 24px;
-    padding-bottom: 24px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /*padding-bottom: 24px;*/
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -116,10 +120,24 @@ img {
     font-style: normal;
     letter-spacing: 0.02em;
     color: #434455;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top-contact-link:hover,
 .top-contact-link:focus {
     color: #404bbf;
+}
+.under-line::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 /*--===============HERO===========--*/
@@ -128,7 +146,7 @@ img {
 }
 .section-first {
     background: #2e2f42;
-    padding: 188px 0;
+       /*padding: 188px 0;*/
 }
 .heading-first {
     max-width: 496px;
@@ -160,7 +178,10 @@ img {
     border: none;
     margin-left: auto;
     margin-right: auto;
-   }
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .order-service-btn:hover,
 .order-service-btn:focus {
@@ -183,12 +204,15 @@ img {
     color: #2e2f42;
 }
 .benefits-title {
-    margin-top: 32px;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 .benefits-item {
     width: calc((100% - 72px)/4);
 }
+/*.benefit-icon {
+    border: 1px solid 8E8F99;
+}*/
 /*--------------------Team-----------------*/
 .paragraph-text {
     font-size: 16px;
@@ -209,7 +233,7 @@ img {
     margin-bottom: 72px;
 }
 .name-position {
-    padding: 32px 0;
+    padding: 32px 0 8px 0;
     /*display: flex;
     justify-content: center;*/
 }
@@ -277,6 +301,50 @@ img {
 .text-white-footer {
     color: #f4f4fd;
 }
- 
+
+.background {
+    height: 600px;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #2e2f42;
+    background-image: 
+    linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero/people-office.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    /*background-origin: padding-box;*/
+    background-clip: padding-box;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    padding-bottom: 32px;
+}
+.text-links {
+   /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;;
+}
 
 
