@@ -63,6 +63,9 @@ img {
  /*--===============HEADER===========--*/
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-nav {
     display: flex;
@@ -126,14 +129,11 @@ img {
 .top-contact-link:focus {
     color: #404bbf;
 }
-.under-line {
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);
+.studio-link {
     position: relative;
     color: #404bbf;
 }
-.under-line::after {
+.studio-link::after {
     display: block;
     position: absolute;
     content: '';
@@ -143,9 +143,6 @@ img {
     bottom: -1px;
     border-radius: 2px;
     background-color: #404bbf;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
 }
 
 /*--===============HERO===========--*/
@@ -159,7 +156,7 @@ img {
                 url('../images/hero/people-office.jpg');
     padding: 188px 0;
     height: 600px;
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     background-color: #2e2f42;
@@ -381,6 +378,11 @@ img {
     color: #4d5ae5;
     margin-bottom: 16px;
     }
+.social-media-list:hover,
+.social-media-list:focus
+ {
+   background-color: #31d0aa;
+}
 
 .text-white-footer {
     color: #f4f4fd;
